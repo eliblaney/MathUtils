@@ -11,7 +11,7 @@ public class UnsolvedFraction implements IFraction {
 		this.unknown = unknown;
 		if(this.unknown == null)
 			throw new IllegalArgumentException("FractionLocation can not be null!");
-		if(this.unknown == FractionLocation.DENOMINATOR && known == 0)
+		if(this.unknown == FractionLocation.NUMERATOR && known == 0)
 			throw new ArithmeticException("Denominator can not be 0!");
 	}
 	
